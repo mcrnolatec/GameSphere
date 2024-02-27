@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let game of games">
+    <a routerLink="/game/{{game.id}}">
+      <img [src]="game.imageUrl" [alt]="game.name"/>
+    </a>
+  </li>
+</ul>
