@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {Game} from "../../../shared/models/Game";
 import {GameService} from "../../../services/game.service";
+import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,8 @@ export class HomeComponent {
   games:Game[] = [];
 
   constructor(private gameService:GameService) {
-    this.games = gameService.getAll();
+    gameService.getAll().subscribe((serverGames) => {
+      this.games = serverGames;
+    })
   }
 }
