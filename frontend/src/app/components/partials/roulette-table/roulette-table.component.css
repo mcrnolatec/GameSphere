@@ -22,3 +22,26 @@ th {
   background-color: green;
   color: white;
 }
+.red:hover{
+  background-color: pink;
+}
+.green:hover{
+  background-color: lightgreen;
+}
+.black:hover{
+  background-color: gray;
+  color: black;
+}
+.red:active{
+  background-color: lightyellow;
+  color: black;
+}
+.green:active{
+  background-color: lightyellow;
+  color: black;
+}
+.black:active{
+  background-color: lightyellow;
+  color: black;
+}
+

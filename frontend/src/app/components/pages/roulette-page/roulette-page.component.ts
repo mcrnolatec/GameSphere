@@ -27,11 +27,12 @@ export class RoulettePageComponent {
       this.betAmount = Number(betAmount);
     }
     else {
-      console.log("Wrong input")
+      console.log("Wrong input");
     }
   }
 
   onBetAdded(bet: Bet) {
     this.bets.push(bet);
+    console.log("BET ADDED " + bet.amount + " ON NUMBER " + bet.number + " USER: " + bet.username);
   }
 }
