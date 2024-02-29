@@ -4,7 +4,7 @@ export class GamesDao{
     private database: any;
 
     constructor() {
-        this.database = new Batabase("../../database/gameSphereDatabase.sqlite");
+        this.database = new Batabase("./database/gameSphereDatabase.sqlite");
     }
 
     getGames = async () =>{
