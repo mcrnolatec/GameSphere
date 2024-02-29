@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {Game} from "../../../shared/models/Game";
 import {GameService} from "../../../services/game.service";
-import {Observable} from "rxjs";
 
 @Component({
   selector: 'app-home',
