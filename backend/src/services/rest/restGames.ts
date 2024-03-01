@@ -1,4 +1,3 @@
-// restGames.ts
 import { Request, Response } from 'express';
 import GamesDAO from '../dao/gamesDAO';
 
