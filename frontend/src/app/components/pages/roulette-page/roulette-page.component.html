@@ -1,4 +1,4 @@
-<app-roulette-table [betAmount]="betAmount" [userName]="user.name" (betAdded)="onBetAdded($event)"></app-roulette-table>
+<app-roulette-table [betAmount]="betAmount" [userName]="user.username" (betAdded)="onBetAdded($event)"></app-roulette-table>
 <div>
   <label for="numberInput">Bet amount:</label>
   <input #b type="text" id="numberInput" name="numberInput" pattern="[0-9]+" placeholder="100" required (keyup.enter)="updateBetAmount(b.value)">

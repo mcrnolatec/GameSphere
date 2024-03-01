@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {User} from "../../../shared/models/User";
 import {Bet} from "../../../shared/models/Bet";
-import { inputValidator } from '../../../services/inputValidator';
+import { inputValidator } from '../../../validators/inputValidator';
 
 @Component({
   selector: 'app-roulette-page',
@@ -19,7 +19,7 @@ export class RoulettePageComponent {
 
     this.user = new User()
     this.user.id = "1";
-    this.user.name = "Marko";
+    this.user.username = "Marko";
   }
 
   updateBetAmount(betAmount:string) {
