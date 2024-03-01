@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import {sample_games} from "./data";
 import RestGames from './services/rest/restGames';
+import RestUsers from "./services/rest/restUsers";
 
 const app = express();
 
@@ -17,6 +18,11 @@ app.get("/api/games", (req, res) => {
 app.get('/games', (req, res) => {
     const restGames = new RestGames();
     restGames.getGames(req, res);
+});
+
+app.get('/users/ihorvat', (req, res) => {
+    const restUsers = new RestUsers();
+    restUsers.getUserByUsernameAndPassword(req, res);
 });
 
 const port = 5000;
