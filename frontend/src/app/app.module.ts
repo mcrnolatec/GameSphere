@@ -8,6 +8,9 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { RoulettePageComponent } from './components/pages/roulette-page/roulette-page.component';
 import {HttpClientModule} from "@angular/common/http";
 import { RouletteTableComponent } from './components/partials/roulette-table/roulette-table.component';
+import { LoginPageComponent } from './components/pages/login-page/login-page.component';
+import { RegistrationPageComponent } from './components/pages/registration-page/registration-page.component';
+import { LeaderboardsPageComponent } from './components/pages/leaderboards-page/leaderboards-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { RouletteTableComponent } from './components/partials/roulette-table/rou
     HeaderComponent,
     HomeComponent,
     RoulettePageComponent,
-    RouletteTableComponent
+    RouletteTableComponent,
+    LoginPageComponent,
+    RegistrationPageComponent,
+    LeaderboardsPageComponent
   ],
   imports: [
     BrowserModule,
