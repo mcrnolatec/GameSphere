@@ -11,6 +11,8 @@ import { RouletteTableComponent } from './components/partials/roulette-table/rou
 import { LoginPageComponent } from './components/pages/login-page/login-page.component';
 import { RegistrationPageComponent } from './components/pages/registration-page/registration-page.component';
 import { LeaderboardsPageComponent } from './components/pages/leaderboards-page/leaderboards-page.component';
+import { DashboardPageComponent } from './components/pages/dashboard-page/dashboard-page.component';
+import { ProfilePageComponent } from './components/pages/profile-page/profile-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { LeaderboardsPageComponent } from './components/pages/leaderboards-page/
     RouletteTableComponent,
     LoginPageComponent,
     RegistrationPageComponent,
-    LeaderboardsPageComponent
+    LeaderboardsPageComponent,
+    DashboardPageComponent,
+    ProfilePageComponent
   ],
   imports: [
     BrowserModule,
