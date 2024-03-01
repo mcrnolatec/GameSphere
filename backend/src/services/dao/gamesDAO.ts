@@ -1,10 +1,10 @@
-const Batabase = require("../../database/database")
+const Database = require("../../database/database")
 
 export class GamesDao{
     private database: any;
 
     constructor() {
-        this.database = new Batabase("./database/gameSphereDatabase.sqlite");
+        this.database = new Database("./database/gameSphereDatabase.sqlite");
     }
 
     getGames = async () =>{
